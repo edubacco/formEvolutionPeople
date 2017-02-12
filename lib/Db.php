@@ -57,11 +57,12 @@ class Db
             $table->timestamps();
             foreach ($this->columns as $col_key => $col_det) {
                 switch ($col_det['type']) {
-                    case 'string':
-                        $table->string($col_key);
-                        break;
                     case 'string_unique':
                         $table->string($col_key)->unique();
+                        break;
+
+                    default:
+                        $table->string($col_key);
                         break;
                 }
             }

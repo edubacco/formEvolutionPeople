@@ -3,7 +3,7 @@
 define('DBDRIVER',  'mysql');
 define('DBHOST', '127.0.0.1');
 define('DBDB', 'evolutionp');
-define('DBTABLE', 'form_fields');
+define('DBTABLE', 'entries');
 define('DBUSER', 'root');
 define('DBPSW', 'mysql');
 define('DBCHARSET', 'utf8');
@@ -21,15 +21,21 @@ $columns = [
     ],
     'email' => [
         'label' => 'Email',
-        'type'  => 'string_unique'
+        'type'  => 'string',
+        'attr'  => 'required'
     ],
     'psw' => [
         'label' => 'Password',
-        'type'  => 'string'
+        'type'  => 'psw_string',
+        'attr'  => 'required'
     ],
     'sesso' => [
         'label' => 'Sesso',
-        'type'  => 'string'
+        'type'  => 'radio',
+        'values'=> [
+            'm'  => 'Uomo',
+            'f'  => 'Donna',
+        ]
     ],
     'hobby' => [
         'label' => 'Hobby',

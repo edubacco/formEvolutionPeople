@@ -1,0 +1,21 @@
+{
+  "name": "formEvolutionPeople",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Silvi",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "~1.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-notify": "^0.4.5",
+    "grunt-contrib-cssmin": "~1.0.0"
+  },
+  "dependencies": {}
+}
